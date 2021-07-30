@@ -1,0 +1,25 @@
+
+# Example application west.yml, using manifest imports
+
+manifest:
+  projects:
+    - name: zephyr
+      revision: v2.6.0
+      url: https://github.com/zephyrproject-rtos/zephyr
+      import: true
+      import:
+        name-allowlist:
+          - cmsis
+          - hal_espressif
+          - mbedtls
+          - mcuboot
+          - mcumgr
+          - net-tools
+          - segger
+          - tinycbor
+          - tinycrypt
+    # Golioth!
+    - name: golioth
+      path: modules/lib/golioth
+      revision: main
+      url: git@github.com:golioth/zephyr.git
