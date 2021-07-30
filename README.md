@@ -5,7 +5,7 @@ to Golioth's logging service.
 
 ## Setup
 
-1. Creating a workspace directory:
+1. Create a workspace directory:
 
 ```console
 mkdir golioth-demo
