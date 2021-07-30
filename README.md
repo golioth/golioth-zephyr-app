@@ -28,7 +28,7 @@ pip3 install west
 4. Pull down this example:
 
 ```console
-west init -m git@github.com:golioth/golioth-zephyr-app.git --manifest-rev main
+west init -m git@github.com:golioth/golioth-zephyr-app.git --manifest-rev main golioth-zephyr-app/
 ```
 
 or if you've already cloned it
@@ -64,13 +64,19 @@ export ESPRESSIF_TOOLCHAIN_PATH="~/.espressif/tools/xtensa-esp32-elf/esp-2020r3-
 export PATH="$PATH:$ESPRESSIF_TOOLCHAIN_PATH/bin"
 ```
 
-3. Build it:
+3. Add your credentials to this application:
+
+Take a look at the [`prj.conf`](app/prj.conf) file and take note of the four lines at the end.
+Fill in `CONFIG_GOLIOTH_SYSTEM_CLIENT_PSK_ID` and `CONFIG_GOLIOTH_SYSTEM_CLIENT_PSK` with the credentials you've generated with Golioth
+and `CONFIG_ESP32_WIFI_SSID` and `CONFIG_ESP32_WIFI_PASSWORD` with your WiFi's SSID and passphrase.
+
+4. Build it:
 
 ```console
 west build -b esp32 .
 ```
 
-4. Flash it:
+5. Flash it:
 
 ```console
 west flash --esp-device=<path to the USB device>
