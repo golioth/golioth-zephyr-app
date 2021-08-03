@@ -23,4 +23,5 @@ manifest:
       path: modules/lib/golioth
       revision: main
       url: git@github.com:golioth/zephyr.git
-  self: golioth-zephyr-app
+  self:
+    path: golioth-zephyr-app
