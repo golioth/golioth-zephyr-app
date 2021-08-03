@@ -19,6 +19,8 @@ python3 -m venv .venv
 source .venv/bin/activate
 ```
 
+If you're using another shell, like `fish`, `source` the `activate` binary that corresponds to your shell, e.g. `source .venv/bin/activate.fish`.
+
 3. Install west
 
 ```console
