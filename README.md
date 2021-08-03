@@ -62,9 +62,11 @@ cd golioth-demo/golioth-zephyr-app/app
 
 ```console
 export ZEPHYR_TOOLCHAIN_VARIANT="espressif"
-export ESPRESSIF_TOOLCHAIN_PATH="~/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/" # This path could be different
+export ESPRESSIF_TOOLCHAIN_PATH="~/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/"
 export PATH="$PATH:$ESPRESSIF_TOOLCHAIN_PATH/bin"
 ```
+
+The `ESPRESSIF_TOOLCHAIN_PATH` could be different, depending on your OS, installation process, and toolchain version.
 
 3. Add your credentials to this application:
 
