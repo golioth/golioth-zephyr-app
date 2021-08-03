@@ -55,7 +55,7 @@ pip3 install -r zephyr/scripts/requirements.txt
 1. `cd` to the `golioth-zephyr-app/app` directory:
 
 ```console
-cd golioth-demo/golioth-zephyr-app/app
+cd golioth-zephyr-app/app
 ```
 
 2. If you're **not** using the Zephyr SDK (which automatically sets up the toolchain):
