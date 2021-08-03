@@ -28,7 +28,7 @@ pip3 install west
 4. Pull down this example:
 
 ```console
-west init -m git@github.com:golioth/golioth-zephyr-app.git --manifest-rev main golioth-zephyr-app/
+west init -m git@github.com:golioth/golioth-zephyr-app.git --manifest-rev main
 ```
 
 or if you've already cloned it
