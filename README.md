@@ -1,4 +1,4 @@
-# Example Application for Golioth + Zephyr on the ESP32
+# Example Application for Golioth + Zephyr on the ESP32 (TESTING GITPOD PRE_BUILD)
 
 This example shows how to use Golioth on Zephyr for the ESP32. This particular app just logs an incrementing counter
 to Golioth's logging service.
